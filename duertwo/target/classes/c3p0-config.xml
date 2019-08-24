@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+
+    <!--<default-config>-->
+        <!--<property name="driverClass">com.mysql.jdbc.Driver</property>-->
+        <!--<property name="jdbcUrl"></property>-->
+        <!--<property name="user">root</property>-->
+        <!--<property name="password">yyss</property>-->
+        <!--<property name="initialPoolSize">5</property>-->
+        <!--<property name="maxPoolSize">20</property>-->
+    <!--</default-config>-->
+
+    <!-- 本地使用 -->
+    <named-config name="duer-local">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/duer?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false</property>
+        <property name="user">root</property>
+        <property name="password">yyss</property>
+        <property name="initialPoolSize">10</property>
+        <property name="maxPoolSize">20</property>
+    </named-config>
+
+    <!-- Yuan 服务器 -->
+    <named-config name="duer-server-one">
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://47.104.248.127:3306/duer?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false</property>
+        <property name="user">root</property>
+        <property name="password">YYS.cyber110</property>
+        <property name="initialPoolSize">10</property>
+        <property name="maxPoolSize">20</property>
+    </named-config>
+
+    <!-- Liu 服务器 -->
+    <named-config name="duer-server-two">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <!--<property name="jdbcUrl">jdbc:mysql://47.95.233.135:3306/duer?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false</property>-->
+        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/duer?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false</property>
+        <property name="user">root</property>
+        <property name="password">Lzx7-ali</property>
+        <property name="initialPoolSize">10</property>
+        <property name="maxPoolSize">20</property>
+    </named-config>
+
+</c3p0-config>
